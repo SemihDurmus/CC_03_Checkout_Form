@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="../CC_03_Checkout_Form/SASS/style.css">
+    <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <main class="left">
+        <form action="result.html" method="GET" name="checkout_form" target="_blank">
+            <div class="contact_info">
+
+                <h2 class="title_left">Contact information</h2>
+                
+                <div class="regular_input">
+                    <label for="email">Email</label><br>
+                        <div class="input_area">
+                            <input type="email" name="Email" id="email" placeholder="Enter your email..." required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                </div>
+
+                <div class="regular_input">
+                    <label for="phone">Phone</label><br>
+                    <div class="input_area">
+                        <input type="tel" name="Phone nr" id="phone" placeholder="Enter your phone...">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shipping_adr">
+
+                <h2 class="title_left">Shipping address</h2>
+
+                <div class="regular_input">
+                    <label for="name">Full name</label><br>
+                    <div class="input_area">
+                        <input type="text" name="Name" id="name" placeholder="Enter your Full Name..." required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+
+                <div class="regular_input">
+                    <label for="address">Address</label><br>
+                    <div class="input_area">
+                        <input type="text" name="Address" id="address" placeholder="Enter your address..." required>
+                        <i class="fas fa-home"></i>
+                    </div>
+                </div>
+
+                <div class="regular_input">
+                    <label for="city">City</label><br>
+                    <div class="input_area">
+                        <input type="text" name="City" id="city" placeholder="Enter your city..." required>
+                        <i class="fas fa-city"></i>
+                    </div>
+                </div>
+
+                <div class="regular_input one_line">
+                    <div class="one_line_left">
+                        <label for="country">Country</label><br>
+                        <div class="input_area">
+                            <select name="Country" id="country">
+                                <option value="Turkey">Turkey</option>
+                                <option value="Germany">Germany</option>
+                                <option value="US">US</option>
+                                <option value="Canada">Canada</option>
+                            </select>
+                            <i class="fas fa-globe-europe"></i>
+                        </div>
+                    </div>
+                    <div class="one_line_right">
+                        <label for="post_code">Post Code</label><br>
+                        <div class="input_area">
+                            <input type="text" name="Post_Code" id="post_code" placeholder="Enter your postal code..." required>
+                            <i class="fas fa-mail-bulk"></i>
+                        </div>
+                    </div>
+                    <input type="checkbox" id="chec"><label for="check">See this information next time</label>
+                </div>
+            </div>
+            <div class="continue">
+                <input type="submit" value="Continue">
+            </div>
+        </form>
+    </main>
+
+    <section class="right">
+
+        <div class="item bag">
+            <div class="item_image">
+                <img src="./IMG/photo1.png" alt="Backbag">
+            </div>
+            <div class="item_description">
+                <h3>Vintage Backbag</h3>
+                <p>$54.99 <span><del>$94.99</del></span></p>
+                <div class="plus_minus">
+                    <button class="btn" id="minus_bag">-</button>
+                    <p id="nr_bag">1</p>
+                    <button class="btn" id="plus_bag" >+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="item shoe">
+            <div class="item_image">
+                <img src="./IMG/photo2.png" alt="Shoe">
+            </div>
+            <div class="item_description">
+                <h3>Levi's Shoes</h3>
+                <p>$74.99 <span><del>$124.99</del></span></p>
+                <div class="plus_minus">
+                    <button class="btn" id="minus_shoe">-</button>
+                    <p id="nr_shoe">1</p>
+                    <button class="btn" id="plus_shoe" >+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="costs">
+            <div class="shipping_line">
+                <p>Shipping</p>
+                <p id="shipping_cost">$19</p>
+            </div>
+            <div class="total_line">
+                <p>Total</p>
+                <p id="total_cost">$148.98</p>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>

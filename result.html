@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        #results {
+            font-size: 1rem;
+            background-color: darkblue;
+            font-family: Arial, Helvetica, sans-serif;
+            color:aquamarine;
+            line-height: 1.8rem;
+        }
+
+        button {
+            width: 7rem;
+            height: 2.5rem;
+            background-color: darkred;
+            border: none;
+            margin-top: 1rem;
+        }
+
+        button a {
+            color:darksalmon;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        button:hover{
+            background-color: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="results"></div>
+    <button><a href="index.html">Back to Form</a></button>
+
+
+    <script>
+        const resultList = document.getElementById('results')
+        new URLSearchParams(window.location.search).forEach((value, name) => {
+            resultList.append(`${name}: ${value}`)
+            resultList.append(document.createElement('br'))
+        })
+    </script>
+</body>
+</html>
