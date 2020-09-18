@@ -9,4 +9,212 @@
 html {
   font-size: 10px;
 }
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  width: 50vw;
+  height: 100vh;
+      grid-template-areas: "heading heading" "left right";
+  -ms-grid-rows: 2fr 15fr;
+      grid-template-rows: 2fr 15fr;
+  -ms-grid-columns: 3fr 2fr;
+      grid-template-columns: 3fr 2fr;
+  margin: 0 auto;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: heading;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+.left {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: left;
+  height: 80%;
+}
+
+.left form {
+  width: 100%;
+  height: 100%;
+  background-color: azure;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.left form .contact_info .title_left {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.left form .contact_info .regular_input {
+  width: 40rem;
+}
+
+.left form .contact_info .regular_input label {
+  font-size: 1.2rem;
+}
+
+.left form .contact_info .regular_input .input_area {
+  position: relative;
+}
+
+.left form .contact_info .regular_input .input_area input {
+  width: 100%;
+  height: 3.6rem;
+  padding: 0.5rem 0.5rem 0.5rem 4.5rem;
+  border: 1px solid #828282;
+  border-radius: 0.5rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.left form .contact_info .regular_input .input_area .fas {
+  position: absolute;
+  font-size: 2rem;
+  color: #828282;
+  left: 3%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.left form .shipping_adr {
+  margin-top: 2rem;
+}
+
+.left form .shipping_adr .title_left {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.left form .shipping_adr .regular_input {
+  width: 40rem;
+}
+
+.left form .shipping_adr .regular_input label {
+  font-size: 1.2rem;
+}
+
+.left form .shipping_adr .regular_input .input_area {
+  position: relative;
+}
+
+.left form .shipping_adr .regular_input .input_area input {
+  width: 100%;
+  height: 3.6rem;
+  padding: 0.5rem 0.5rem 0.5rem 4.5rem;
+  border: 1px solid #828282;
+  border-radius: 0.5rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.left form .shipping_adr .regular_input .input_area .fas {
+  position: absolute;
+  font-size: 2rem;
+  color: #828282;
+  left: 3%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.left form .shipping_adr .one_line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.left form .shipping_adr .one_line .one_line_left .input_area select {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 13rem;
+  height: 3.6rem;
+  padding-left: 4rem;
+  border: 1px solid #828282;
+  border-radius: 0.5rem;
+}
+
+.left form .shipping_adr #check_label {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.left form .continue {
+  position: relative;
+}
+
+.left form .continue input {
+  margin-top: 2rem;
+  width: 8.5rem;
+  height: 4.5rem;
+  background-color: #F19E54;
+  color: #FFF;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 3px #828282;
+          box-shadow: 0 3px #828282;
+}
+
+.left form .continue input:hover {
+  color: #F19E54;
+  background-color: #FFF;
+  border-color: #F19E54;
+}
+
+.left form .continue:active {
+  top: 3px;
+}
+
+.left form .continue:active input {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.right {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: right;
+  background-color: burlywood;
+}
 /*# sourceMappingURL=style.css.map */
