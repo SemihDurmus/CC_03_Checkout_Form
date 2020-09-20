@@ -38,8 +38,8 @@ header h1 {
 
 .left {
     width: 60%;
-    background-color: aquamarine;
 }
+
 .contact_info,
 .shipping_adr {
     width:100%;
@@ -315,8 +315,13 @@ body {
 
 @media screen and (max-width:450px){
 
+    *{
+        overflow: visible;
+    }
+
     html{
         font-size: 7px;
+ 
     }
     body {
         width:90%;
@@ -325,6 +330,8 @@ body {
 
     .big_container {
         flex-direction: column;
+        align-items: center;
+        justify-content: unset;
     }
     .regular_input {
         width:95%;
@@ -337,5 +344,10 @@ body {
 
     .left {
         order:2;
+        margin-top: 4rem;
+    }
+
+    .save {
+        margin-bottom: 3rem;
     }
 }
