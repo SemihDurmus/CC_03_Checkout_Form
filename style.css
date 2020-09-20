@@ -12,7 +12,7 @@
 }
 
 body {
-    width: 55vw;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -38,6 +38,11 @@ header h1 {
 
 .left {
     width: 60%;
+    background-color: aquamarine;
+}
+.contact_info,
+.shipping_adr {
+    width:100%;
 }
 
 .title_left {
@@ -46,7 +51,7 @@ header h1 {
 }
 
 .regular_input {
-    width:40rem;
+    width:80%;
 }   
 
 .regular_input label {
@@ -113,8 +118,7 @@ select{
 
 .save {
     position: relative;
-    text-align: center;
-}
+    text-align: center;}
 
 .save input {
     margin-top: 2rem;
@@ -147,7 +151,8 @@ select{
 /* --------------RIGHT SECTION-------------- */
 
 .right {
-    width: 45%;
+    width: 40%;
+    min-width: 35rem;
     background-color: #EEEEEE;
     border-radius: 10px;
     padding: 2rem;
@@ -248,3 +253,89 @@ select{
     color: #000;
 }
 
+/* -----------MEDIA------------- */
+
+@media screen and (max-width:1110px){
+
+body {
+    width:80%;
+}
+}
+
+@media screen and (max-width:960px){
+
+body {
+    width:90%;
+}
+
+.regular_input {
+    width:85%;
+}  
+
+}
+
+@media screen and (max-width:830px){
+
+    body {
+        width:90%;
+    }
+    .regular_input {
+        width:95%;
+    }  
+}
+
+@media screen and (max-width:780px){
+
+    html{
+        font-size: 8px;
+    }
+    body {
+        width:90%;
+    }
+    .regular_input {
+        width:95%;
+    }  
+}
+
+@media screen and (max-width:634px){
+
+    html{
+        font-size: 7px;
+    }
+    body {
+        width:95%;
+    }
+    .regular_input {
+        width:95%;
+    }  
+
+    .right {
+        min-width: 25rem;
+}
+
+@media screen and (max-width:450px){
+
+    html{
+        font-size: 7px;
+    }
+    body {
+        width:90%;
+        height:auto;
+    }
+
+    .big_container {
+        flex-direction: column;
+    }
+    .regular_input {
+        width:95%;
+    }  
+
+    .right,
+    .left {
+        width: 100%;
+    }
+
+    .left {
+        order:2;
+    }
+}
