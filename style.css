@@ -123,7 +123,7 @@ select{
 .save input {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    width: 8.5rem;
+    width: 10rem;
     height: 4.5rem;
     background-color: #F19E54;
     color: #FFF;
@@ -350,4 +350,17 @@ body {
     .save {
         margin-bottom: 3rem;
     }
+
+    .save input {
+        border-radius: 12px;
+        font-size: 1.6rem;
+    }
+
+    .line p{
+        font-size: 1.8rem;
+    }
+
+    .plus_minus {
+        margin-top: 5rem;
+        width: 50%;
 }
